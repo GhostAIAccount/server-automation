@@ -1,0 +1,14 @@
+# Copy to scripts/export.conf (gitignored) and fill in your real paths.
+JELLYFIN_FILES=(
+  /srv/jellyfin/docker-compose.yml
+)
+CLOUDFLARE_FILES=(
+  /etc/cloudflared/config.yml       # credentials JSON/cert.pem are auto-excluded
+)
+DASHBOARD_FILES=(
+  /srv/dashboard/
+)
+STARTUP_FILES=(
+  /etc/systemd/system/jellyfin-stack.service
+  /usr/local/bin/startup.sh
+)
